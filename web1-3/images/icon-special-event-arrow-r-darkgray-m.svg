@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon-special-event-arrow-R-blue-m</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="11.1913043" height="14"></rect>
+    </defs>
+    <g id="icon-special-event-arrow-R-blue-m" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-arrow-R-blue">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask" fill-rule="nonzero"></g>
+            <g mask="url(#mask-2)" id="arrow" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <g transform="translate(2.000000, 1.000000)">
+                    <polyline points="1.13686838e-13 12 6.30857143 6 1.13686838e-13 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
