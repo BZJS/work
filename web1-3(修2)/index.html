@@ -137,60 +137,11 @@
                 <div class="wrapper">
                     <article class="article">
                         <section class="article__header">
-                            <style>
-                                .dian-can-lan {
-                                    display: flex;
-                                    box-sizing: border-box;
-                                    padding-left: 16px;
-                                }
 
-                                .img-content {
-                                    background-image: url('./images/proD.png');
-                                    background-position: center center;
-                                    width: 100px;
-                                    height: 30px;
-                                    position: relative;
-                                }
-
-                                .img-content span {
-                                    font-size: 11px;
-                                    position: absolute;
-                                    right: 7px;
-                                    bottom: 5px;
-                                    color: #ffffff;
-                                    cursor: pointer;
-                                }
-
-                                .change-status {
-                                    background-image: url('./images/proF2.png');
-                                    background-position: center -38px;
-                                    background-size: 85%;
-                                    width: 100px;
-                                    height: 30px;
-                                    background-repeat: no-repeat;
-                                    cursor: pointer;
-
-                                }
-
-                                .dian-can-lan {
-                                    display: flex;
-                                }
-                            </style>
                             <div class="recommend__text">
                                 <div class="categorywebmap"><span>狐臭論壇</span></div>
                             </div>
                             <h1 class="title">困擾多年的狐臭，我是這樣解決的！</h1>
-                            <div class="dian-can-lan">
-                                <div class="img-content" onclick="favorites()">
-
-                                    <span class="controlText">12386</span>
-                                </div>
-                                <div class="change-status" onclick="favoritesChange()">
-
-                                </div>
-                            </div>
-
-
 
                             <div class="action">
                                 <div class="action__buttons">
@@ -201,14 +152,14 @@
                                             data-action="like" data-size="small" data-show-faces="false"
                                             data-share="false"></div>
                                     </div>
-                                    <div class="buttons ">
+                                    <div class="buttons">
 
                                     </div>
 
                                 </div>
                             </div>
                             <style>
-
+                                .media {}
                             </style>
                             <div class="media media--image">
                                 <div class="img">
@@ -251,7 +202,7 @@
                                 <script>
                                     var changeButton = document.querySelector('.assistive')
                                     var infoText = document.querySelector('.info-text')
-                                    // console.log(changeButton)
+                                    console.log(changeButton)
                                     // changeButton.addEventListener('click', function () {
                                     //     essay__intro.style.fontSize = '24px'
                                     // })
@@ -504,48 +455,6 @@
             let not = document.getElementsByName("notweixin");
             for (let i of not) {
                 i.onclick = showline;
-            }
-            // 设置按钮收藏
-            var controlNum = 1
-            // 获得收藏的数字
-            var controlText = document.querySelector('.controlText')
-
-            // 转化位数字
-            var getNum = Number(controlText.innerText)
-
-
-            // 获得点赞的那个元素
-            var Likes = document.querySelector('.change-status')
-
-
-            var LikeNum = 1
-
-            function favorites() {
-                if (LikeNum % 2 != 0) {
-                    getNum++
-                    LikeNum++
-                } else {
-                    getNum--
-                    LikeNum--
-
-                }
-
-                controlText.innerText = getNum
-
-
-            }
-            var souCangImg = 1
-
-            function favoritesChange() {
-                if (souCangImg % 2 != 0) {
-                    Likes.style.backgroundImage = "url('./images/proF1.png')"
-                    souCangImg++
-                } else {
-                    Likes.style.backgroundImage = "url('./images/proF2.png')"
-                    souCangImg++
-                }
-
-
             }
         </script>
     </div>
